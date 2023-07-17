@@ -13,6 +13,18 @@ const App = () => {
         <PinkBox></PinkBox>
         <BlackBox></BlackBox>
         <BlackBox></BlackBox> */}
+        <Box className="pink"></Box>
+        <Box className="green"></Box>
+        <Box className="green"></Box>
+        <Box className="skyblue"></Box>
+        <Box className="black"></Box>
+        <Box className="black"></Box>
+        <Box className="yellow"></Box>
+        <Box className="yellow"></Box>
+        <Box className="black"></Box>
+        <Box className="black"></Box>
+        <Box className="yellow"></Box>
+        <Box className="yellow"></Box>
       </Contents>
     </Wrapper>
   );
@@ -36,6 +48,12 @@ const Box = styled.div`
       ? "#000"
       : props.className === "pink"
       ? "#f91aff"
+      : props.className === "green"
+      ? "#40fe00"
+      : props.className === "skyblue"
+      ? "#3fffff"
+      : props.className === "yellow"
+      ? "#fffe00"
       : "initial"};
 `;
 // const WhiteBox = styled.div`
