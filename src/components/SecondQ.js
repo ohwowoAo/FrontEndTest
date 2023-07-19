@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const borderStyle = "2px solid #000";
 
-const Second = () => {
+const SecondQ = () => {
   return (
     <Wrapper>
-      <h3>2. 전달된 이미지 만들기 </h3>
+      <Title>2. 전달된 이미지 만들기 </Title>
       <Contents>
         <BoxWrap className="noBorR noBorB">
           <Box className="white"></Box>
@@ -33,9 +33,16 @@ const Second = () => {
   );
 };
 
-export default Second;
+export default SecondQ;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  padding: 20px 0 0;
+`;
+const Title = styled.h3`
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+`;
 const Contents = styled.div`
   position: relative;
   width: 600px;
@@ -51,8 +58,9 @@ const CenterBox = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: calc(100% / 2 - 3px);
-  height: calc(100% / 2 - 3px);
+  width: calc(100% / 2 - 2px);
+  height: calc(100% / 2 - 2px);
+  box-sizing: content-box;
   border: ${borderStyle};
   background-color: #40fe00;
 `;
